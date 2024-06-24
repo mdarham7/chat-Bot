@@ -33,24 +33,24 @@ cd ..
 Now install the dependencies
 ```shell
 cd server
-yarn
+npm i
 cd ..
 cd public
-yarn
+npm i
 ```
 We are almost done, Now just start the development server.
 
 For Frontend.
 ```shell
 cd public
-yarn start
+npm start
 ```
 For Backend.
 
 Open another terminal in folder, Also make sure mongodb is running in background.
 ```shell
 cd server
-yarn start
+npm start
 ```
 Done! Now open localhost:3000 in your browser.
 
@@ -59,10 +59,10 @@ Done! Now open localhost:3000 in your browser.
 - Make sure you are in the root of your project and run the following command.
 
 ```shell
-docker compose build --no-cache
+docker-compose up -d  --build 
 ```
-after the build is complete run the containers using the following command
+after the build is complete, you can check the running container using the below commands : 
 ```shell
-docker compose up
+docker ps
 ```
 now open localhost:3000 in your browser.
